@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday My Love ❤️</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 40px;
+}
+
+h1 {
+  font-size: 3em;
+  text-shadow: 0 0 15px white;
+}
+
+.section {
+  margin-top: 60px;
+  animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.timeline {
+  max-width: 650px;
+  margin: auto;
+  text-align: left;
+}
+
+.timeline p {
+  background: rgba(255,255,255,0.2);
+  padding: 12px;
+  border-radius: 12px;
+  margin: 10px 0;
+}
+
+button {
+  padding: 12px 25px;
+  border-radius: 25px;
+  border: none;
+  background: white;
+  color: #ff4e50;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Floating hearts */
+.heart {
+  position: fixed;
+  bottom: -10px;
+  font-size: 18px;
+  animation: floatUp 6s linear infinite;
+}
+
+@keyframes floatUp {
+  0% {transform: translateY(0);}
+  100% {transform: translateY(-100vh);}
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- 🎵 MUSIC -->
+<audio autoplay loop>
+  <source src="YOUR_SONG_LINK_HERE" type="audio/mpeg">
+</audio>
+
+<div class="container">
+
+<h1>Happy Birthday My Princess 👑❤️</h1>
+
+<div class="section">
+<p>
+From 20th February till today…  
+I didn’t just find love… I found **you**… my whole world. 🥺❤️  
+</p>
+
+<p>
+I know I’m not perfect at expressing my feelings…  
+Sometimes I stay quiet, sometimes I mess things up…  
+but one thing I want you to feel always is this—  
+**I love you more than anything in this world.** 💖  
+</p>
+</div>
+
+<!-- 🎡 GIANT WHEEL -->
+<div class="section">
+<h2>🎡 That Giant Wheel Night</h2>
+<p>
+That day… I was scared of height… but I never told you 😅  
+And then… you held my hand 🤝  
+and said “look at me”…  
+</p>
+
+<p>
+And I swear…  
+in that moment, I stopped being scared…  
+because I got lost in your eyes ✨  
+</p>
+
+<p>
+That wasn’t just a ride…  
+that was the moment my heart chose you ❤️  
+</p>
+</div>
+
+<!-- 💞 TIMELINE -->
+<div class="section">
+<h2>💞 Our Story</h2>
+<div class="timeline">
+<p>⛪ Temple – we didn’t know… destiny was watching us</p>
+<p>😊 Function – just a smile… but something started</p>
+<p>🏡 Prayagraj – 5 days… where my life changed</p>
+<p>🎡 Giant Wheel – where I fell for you</p>
+<p>🌙 That night – when hearts spoke without fear</p>
+<p>❤️ Today – you are my everything</p>
+</div>
+</div>
+
+<!-- 💔 EMOTIONAL CONFESSION -->
+<div class="section">
+<p>
+I’m sorry… for the times I was busy…  
+for the times I couldn’t understand you properly…  
+for the times I hurt you without meaning to 😔  
+</p>
+
+<p>
+But please try to understand me too…  
+I may not show perfectly…  
+but I feel everything deeply… especially for you ❤️  
+</p>
+</div>
+
+<!-- 🔮 FUTURE -->
+<div class="section">
+<p>
+I don’t just want this birthday…  
+I want every birthday of yours… with me beside you 🎂  
+</p>
+
+<p>
+I want to grow old with you…  
+fight with you… laugh with you…  
+and still choose you every single day 💞  
+</p>
+</div>
+
+<!-- ❤️ BUTTON -->
+<div class="section">
+<button onclick="showMessage()">Click if you love me 😘</button>
+
+<p id="secret" class="hidden">
+If you ever feel alone… remember this…  
+there is someone who loves you beyond words ❤️  
+and that someone is me… forever 🫂  
+
+– Your Ram 💌
+</p>
+</div>
+
+</div>
+
+<script>
+
+/* Floating hearts */
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.classList.add("heart");
+  heart.innerHTML = "❤️";
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.animationDuration = (Math.random() * 3 + 3) + "s";
+  document.body.appendChild(heart);
+
+  setTimeout(() => heart.remove(), 6000);
+}
+setInterval(createHeart, 500);
+
+/* Secret */
+function showMessage() {
+  document.getElementById("secret").classList.remove("hidden");
+}
+
+</script>
+
+</body>
+</html>
